@@ -51,10 +51,11 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   // update a tag's name by its `id` value
+  const whr = {where: {id: req.params.id}};
+  const values = {tag_name: req.body.tag_name};
   Tag.update(
-    {tag_name: req.body.tag_name},
-    {where: req.params.id}
-
+    values,
+    whr  
   ).then(data=>{
       res.json(data)
   }).catch(err=>{

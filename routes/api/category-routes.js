@@ -52,10 +52,15 @@ router.post("/",(req,res)=>{
 
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+  console.log('');
+  console.log(req.params);
+  console.log(req.body);
+  console.log('');
+  const whr = {where: {id: req.params.id}};
+  const values = {category_name: req.body.category_name};
   Category.update(
-    {category_name: req.body.category_name},
-    {where: req.params.bookId}
-
+      values,
+      whr
   ).then(data=>{
       res.json(data)
   }).catch(err=>{
