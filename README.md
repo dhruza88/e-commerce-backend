@@ -20,7 +20,8 @@ Allow a user/business owner to be able to look at their inventory and all associ
 
 ## Installation
 npm express,
-npm sequalize
+npm sequalize,
+npm mysql2
 
 ## Usage
 The user must first run mysql to set up the schema database. After that run npm init, and npm install to add all necessary packages into the servver. Then use npm run seed, to populate the server with all the relevant data. Followed by running node server.js to intialize the program.
