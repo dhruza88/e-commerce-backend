@@ -1,7 +1,7 @@
 {
   "name": "module-13-challenge-orm",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description Allow a user/business owner to be able to look at their inventory and all associated products, product tags, and categories. Allowing them to update, delete, add all stock for new incoming merchandise and for when they run out of certain items.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
